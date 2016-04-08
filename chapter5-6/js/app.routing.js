@@ -2,9 +2,13 @@ App.config(function($routeProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
 
   $routeProvider
-  .when('/main', {
-    templateUrl: 'js/main/partials/main.html',
-    controller: 'MainController'
+  .when('/', {
+    templateUrl: 'js/posts/partials/index.html',
+    controller: 'IndexController'
+  })
+  .when('/posts/:id', {
+    templateUrl: 'js/posts/partials/show.html',
+    controller: 'ShowController'
   })
   .otherwise('/');
 
