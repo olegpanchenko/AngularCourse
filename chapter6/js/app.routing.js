@@ -18,7 +18,16 @@ App.config(function($routeProvider, $locationProvider) {
     controller: 'IndexController',
     resolve: {
       auth: ["AuthService", function(AuthService) {
-        AuthService.isAuthenticated()
+        return AuthService.isAuthenticated();
+      }]
+    }
+  })
+  .when('/posts/new', {
+    templateUrl: 'js/posts/partials/form.html',
+    controller: 'CreateController',
+    resolve: {
+      auth: ["AuthService", function(AuthService) {
+        return AuthService.isAuthenticated();
       }]
     }
   })
@@ -27,7 +36,16 @@ App.config(function($routeProvider, $locationProvider) {
     controller: 'ShowController',
     resolve: {
       auth: ["AuthService", function(AuthService) {
-        AuthService.isAuthenticated()
+        return AuthService.isAuthenticated();
+      }]
+    }
+  })
+  .when('/posts/:id/edit', {
+    templateUrl: 'js/posts/partials/form.html',
+    controller: 'UpdateController',
+    resolve: {
+      auth: ["AuthService", function(AuthService) {
+        return AuthService.isAuthenticated();
       }]
     }
   })

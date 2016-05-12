@@ -1,4 +1,4 @@
-var App = angular.module('myApp',['ngRoute', 'ngResource', 'base64', 'ngSanitize']);
+var App = angular.module('myApp',['ngRoute', 'ngResource', 'base64', 'ngSanitize', 'ngAnimate']);
 
 App.run(["$rootScope", "$location", "AuthService", function($rootScope, $location, AuthService) {
   AuthService.init();

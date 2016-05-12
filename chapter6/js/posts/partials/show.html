@@ -1,12 +1,20 @@
-<div>
-  Hi {{user.name}}
-  <a ng-href="/logout" ng-if="user">Logout</a>
-</div>
-<h3 class="text-center">{{post.title.rendered}}</h3>
-<div class="row">
-  <div class="col-sm-12">
-    <p ng-bind-html="post.content.rendered"></p>
-    <em>{{post.date}}</em>
+<div id="wrapper">
+  <div ng-include src="'js/posts/partials/header.html'" onload="userName = user.name"></div>
+
+  <div id="page-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12">
+          <h3 class="page-header">{{post.title.rendered}}</h3>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <p ng-bind-html="post.content.rendered"></p>
+          <em>{{post.date}}</em>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
-

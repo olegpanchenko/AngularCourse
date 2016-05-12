@@ -1,0 +1,30 @@
+<div id="wrapper">
+  <div ng-include src="'js/posts/partials/header.html'" onload="userName = user.name"></div>
+
+  <div id="page-wrapper">
+    <div class="container-fluid">
+      <form ng-submit='save()'>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input type="text" class="form-control" id="title" placeholder="Title" ng-model='title'>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <textarea class="form-control" id="content" placeholder="Content" ng-model='content'></textarea>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

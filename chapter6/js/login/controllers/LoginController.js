@@ -15,7 +15,9 @@ App.controller('LoginController',function($scope, $location, AuthService, User, 
           Authorization: 'Basic ' + $base64.encode( $scope.userName + ':' + $scope.password )
         }
       }).then(function(res){
-        AuthService.login(res.data);
+        var user = res.data;
+        user.password = $scope.password;
+        AuthService.login(user);
         $location.path("/");
       }, function(res){
         console.log(res);
