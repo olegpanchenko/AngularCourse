@@ -1,0 +1,11 @@
+#wrapper
+  div(ng-include='', src="'app/posts/views/header.html'", onload='userName = user.name')
+  #page-wrapper
+    .container-fluid
+      .row
+        .col-sm-12
+          h3.page-header {{post.title.rendered}}
+      .row
+        .col-sm-12
+          p(ng-bind-html='post.content.rendered')
+          em {{post.date}}

@@ -1,0 +1,254 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+$navbar-inverse-link-color: #5AADBB;
+$icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+.thumbnail {
+  height: 200px;
+
+  img.pull-right {
+    width: 50px;
+  }
+}
+
+$color_1: #999;
+$color_2: #fff;
+$color_3: #5cb85c;
+$color_4: #3d8b3d;
+$color_5: #d9534f;
+$color_6: #b52b27;
+$color_7: #f0ad4e;
+$color_8: #df8a13;
+
+/*!
+ * Start Bootstrap - SB Admin Bootstrap Admin Template (http://startbootstrap.com)
+ * Code licensed under the Apache License v2.0.
+ * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+ */
+/* Global Styles */
+/* Top Navigation */
+/* Side Navigation */
+/* Flot Chart Containers */
+/* Custom Colored Panels */
+body {
+  margin-top: 100px;
+  background-color: #222;
+}
+#wrapper {
+  padding-left: 0;
+}
+#page-wrapper {
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+}
+.huge {
+  font-size: 50px;
+  line-height: normal;
+  font-size: 40px;
+}
+.top-nav {
+  padding: 0 15px;
+  >li {
+    display: inline-block;
+    float: left;
+    >a {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      line-height: 20px;
+      color: $color_1;
+      &:hover {
+        color: $color_2;
+        background-color: #000;
+      }
+      &:focus {
+        color: $color_2;
+        background-color: #000;
+      }
+    }
+  }
+  >.open {
+    >a {
+      color: $color_2;
+      background-color: #000;
+      &:hover {
+        color: $color_2;
+        background-color: #000;
+      }
+      &:focus {
+        color: $color_2;
+        background-color: #000;
+      }
+    }
+    >.dropdown-menu {
+      float: left;
+      position: absolute;
+      margin-top: 0;
+      border: 1px solid rgba(0,0,0,.15);
+      border-top-left-radius: 0;
+      border-top-right-radius: 0;
+      background-color: #fff;
+      -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
+      >li {
+        >a {
+          white-space: normal;
+        }
+      }
+    }
+  }
+}
+ul.message-dropdown {
+  padding: 0;
+  max-height: 250px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+li.message-preview {
+  width: 275px;
+  border-bottom: 1px solid rgba(0,0,0,.15);
+  >a {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+li.message-footer {
+  margin: 5px 0;
+}
+ul.alert-dropdown {
+  width: 200px;
+}
+.side-nav {
+  >li {
+    >ul {
+      padding: 0;
+      >li {
+        >a {
+          display: block;
+          padding: 10px 15px 10px 38px;
+          text-decoration: none;
+          color: $color_1;
+          &:hover {
+            color: $color_2;
+          }
+        }
+      }
+    }
+  }
+}
+.flot-chart {
+  display: block;
+  height: 400px;
+}
+.flot-chart-content {
+  width: 100%;
+  height: 100%;
+}
+.panel-green {
+  border-color: #5cb85c;
+  >.panel-heading {
+    border-color: #5cb85c;
+    color: $color_2;
+    background-color: #5cb85c;
+  }
+  >a {
+    color: $color_3;
+    &:hover {
+      color: $color_4;
+    }
+  }
+}
+.panel-red {
+  border-color: #d9534f;
+  >.panel-heading {
+    border-color: #d9534f;
+    color: $color_2;
+    background-color: #d9534f;
+  }
+  >a {
+    color: $color_5;
+    &:hover {
+      color: $color_6;
+    }
+  }
+}
+.panel-yellow {
+  border-color: #f0ad4e;
+  >.panel-heading {
+    border-color: #f0ad4e;
+    color: $color_2;
+    background-color: #f0ad4e;
+  }
+  >a {
+    color: $color_7;
+    &:hover {
+      color: $color_8;
+    }
+  }
+}
+@media (min-width:768px) {
+  body {
+    margin-top: 50px;
+  }
+  #wrapper {
+    padding-left: 225px;
+  }
+  #page-wrapper {
+    padding: 10px;
+  }
+  .side-nav {
+    position: fixed;
+    top: 51px;
+    left: 225px;
+    width: 225px;
+    margin-left: -225px;
+    border: none;
+    border-radius: 0;
+    overflow-y: auto;
+    background-color: #222;
+    bottom: 0;
+    overflow-x: hidden;
+    padding-bottom: 40px;
+    >li {
+      >a {
+        width: 225px;
+      }
+    }
+    li {
+      a {
+        &:hover {
+          outline: none;
+          background-color: #000 !important;
+        }
+        &:focus {
+          outline: none;
+          background-color: #000 !important;
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector
